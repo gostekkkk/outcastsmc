@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Outcast MC - California Chapter">
+  <meta name="keywords" content="Outcast MC, California Chapter, GTA V">
+  <meta name="author" content="Outcast">
+  <title>Outcast MC — California Chapter</title>
+
+  <style>
+@font-face {
+  font-family: 'MojaCzcionka';
+  src: url('fonts/OldLondon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #181a1b;
+  color: #e6e6e6;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* --- HEADER --- */
+header {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+header img.logo {
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(0 0 8px #000);
+}
+
+header img.header-image {
+  position: absolute;
+  right: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: auto;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+
+header img.header-left {
+  position: absolute;
+  left: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  height: auto;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+
+/* --- TREŚĆ STRONY --- */
+main {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+main h1 {
+  font-family: 'MojaCzcionka';
+  font-size: 48px;
+  color: #e6e6e6;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #dcdcdc;
+}
+
+/* --- SEKCJA CZŁONKÓW --- */
+.members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.member {
+  text-align: center;
+  font-family: 'MojaCzcionka';
+  color: #e6e6e6;
+}
+
+.member img {
+  width: 300px;             /* stała szerokość */
+  height: 300px;            /* stała wysokość */
+  object-fit: cover;        /* przycięcie nadmiaru */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+.member p {
+  margin-top: 10px;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* --- STOPKA --- */
+footer {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+  border-top: 1px solid #2a2a2a;
+  font-family: 'MojaCzcionka';
+}
+  </style>
+</head>
+
+<body>
+  <!-- LOGO -->
+  <header>
+    <img src="Center_Piece.png" alt="Outcast MC Logo" class="logo">
+    <img src="AOA.png" alt="Dodatkowe zdjęcie" class="header-image">
+    <img src="1_Diamond.png" alt="Lewe zdjęcie" class="header-left">
+  </header>
+
+  <!-- TREŚĆ STRONY -->
+  <main>
+    <h1>San Andreas Chapter</h1>
+    <p>
+      
+    </p>
+
+    <!-- SEKCJA CZŁONKÓW -->
+    <div class="members">
+      <div class="member">
+        <img src="" alt="Vice President">
+        <p>Vice President</p>
+      </div>
+      <div class="member">
+        <img src="" alt="Vice President">
+        <p>President</p>
+      </div>
+      <div class="member">
+        <img src="" alt="Sgt at Arms">
+        <p>Sgt at Arms</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- STOPKA -->
+  <footer>
+    © Outcasts MC
+  </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Outcast MC">
+  <meta name="keywords" content="Outcast MC, GTA V, San Andreas Chapter">
+  <meta name="author" content="Outcast">
+  <title>Outcast MC — San Andreas Chapter</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #181a1b;
+      color: #e6e6e6;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* --- Nagłówek z logiem --- */
+    header {
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    header img {
+      width: 300px;
+      height: auto;
+      filter: drop-shadow(0 0 8px #000);
+    }
+
+   /* --- Sekcja mapy --- */
+.map-section {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #181a1b;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.map-section img {
+  width: 70%;           /* szerokość  */
+  max-width: 800px;     /* nie większa niż 800 px */
+  height: auto;         /* 
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+    /* --- Sekcja postaci --- */
+    .characters {
+      padding: 50px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background-color: #121314;
+      border-top: 1px solid #2a2a2a;
+    }
+    .characters img {
+      width: 280px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .characters img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(192,57,43,0.6);
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 20px;
+      border-top: 1px solid #2a2a2a;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Logo -->
+  <header>
+    <img src="Center_Piece.png" alt="Outcast MC Logo">
+  </header>
+
+  <!-- Sekcja z mapą GTA V -->
+  <section class="map-section">
+    <img src="mapa_gta5.jpg" alt="Mapa GTA V">
+  </section>
+
+  <!-- Sekcja ze zdjęciami postaci -->
+  <section class="characters">
+    <img src="postac1.jpg" alt="Postasdasdać 1">
+    <img src="postac2.jpg" alt="Postać 2">
+    <img src="postac3.jpg" alt="Postać 3">
+    <img src="postac4.jpg" alt="Postać 4">
+  </section>
+
+  <footer>
+    © Outcast MC — San Andreas Chapter
+  </footer>
+</body>
+</html>
