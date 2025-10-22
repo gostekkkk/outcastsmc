@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Biking & Brotherhood">
+  <meta name="keywords" content="Biking & Brotherhood">
+  <meta name="author" content="Outcasts">
+  <title>Outcasts MC - Historia</title>
+
+  <style>
+@font-face {
+  font-family: 'MojaCzcionka';
+  src: url('fonts/OldLondon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #181a1b;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Header identyczny jak na głównej stronie */
+header {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+header img.logo {
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(0 0 8px #000);
+}
+
+header img.header-image {
+  position: absolute;
+  right: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: auto;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+
+header img.header-left {
+  position: absolute;
+  left: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  height: auto;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+/* Nawigacja */
+.nav-tabs {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #121314;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.nav-tabs a {
+  font-family: 'MojaCzcionka';
+  font-size: 28px;
+  color: #e6e6e6;
+  text-decoration: none;
+  padding: 15px 35px;
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  margin: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs a:hover {
+  background-color: #e6e6e6;
+  color: #181a1b;
+  transform: scale(1.05);
+}
+
+/* Sekcja historii */
+.history-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.history-text {
+  flex: 1;
+  font-family: 'MojaCzcionka';
+  font-size: 26px;
+  line-height: 1.6;
+  color: #e6e6e6;
+}
+
+.history-text h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.history-text p {
+  margin-bottom: 20px;
+}
+
+.history-logo {
+  flex-shrink: 0;
+  width: 500px; /* zwiększone logo */
+  height: auto;
+  margin-top: 50px;
+  filter: drop-shadow(0 0 12px #000);
+}
+
+/* Stopka */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #181a1b;
+  color: #777;
+  border-top: 1px solid #2a2a2a;
+  font-family: 'MojaCzcionka';
+}
+
+  </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html">
+    <img src="Center_Piece.png" alt="Outcast MC Logo" class="logo">
+  </a>
+  <img src="AOA.png" alt="Dodatkowe zdjęcie" class="header-image">
+  <img src="1_Diamond.png" alt="Lewe zdjęcie" class="header-left">
+</header>
+
+<section class="nav-tabs">
+  <a href="index.html">Strona Główna</a>
+  <a href="galeria.html">Galeria</a>
+</section>
+
+<section class="history-section">
+  <div class="history-text">
+    <h1>Historia Outcasts MC</h1>
+    <p>Outcasts MC został założony w 2010 roku przez grupę zapaleńców motocykli. Nasza misja zawsze była jasna – braterstwo, pasja do jazdy i lojalność wobec członków klubu.</p>
+    <p>Przez lata rozwijaliśmy naszą społeczność, uczestnicząc w wielu wydarzeniach motocyklowych i organizując spotkania regionalne. Historia naszego klubu jest pełna wyzwań, zwycięstw i niezapomnianych przygód.</p>
+    <p>Każdy członek Outcasts MC odgrywa kluczową rolę w budowaniu naszej legendy. Nasze wartości to honor, lojalność i braterstwo, które przekraczają granice i czas.</p>
+  </div>
+
+  <img src="Center_Piece.png" alt="Outcasts MC Logo" class="history-logo">
+</section>
+
+<footer>
+  © Outcasts MC
+</footer>
+
+</body>
+</html>

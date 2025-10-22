@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Galeria Outcasts MC">
+  <meta name="keywords" content="Outcasts MC, Galeria">
+  <meta name="author" content="Outcasts">
+  <title>Galeria Outcasts MC</title>
+
+  <style>
+@font-face {
+  font-family: 'MojaCzcionka';
+  src: url('fonts/OldLondon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #181a1b;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Header identyczny jak na głównej stronie */
+header {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+header img.logo {
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(0 0 8px #000);
+}
+
+header img.header-image {
+  position: absolute;
+  right: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: auto;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+
+header img.header-left {
+  position: absolute;
+  left: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  height: auto;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+
+/* Nawigacja */
+.club-tabs {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #121314;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.tabs-container {
+  display: inline-flex;
+  gap: 50px;
+}
+
+.tab-button {
+  font-family: 'MojaCzcionka';
+  font-size: 28px;
+  color: #e6e6e6;
+  text-decoration: none;
+  padding: 20px 40px;
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #e6e6e6;
+  color: #181a1b;
+  transform: scale(1.05);
+}
+
+/* Sekcja galerii */
+.gallery-section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #e6e6e6;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255,255,255,0.7);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(24,26,27,0.95);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #fff;
+  z-index: 2;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+/* Wyśrodkowana minimalistyczna strzałka */
+.gallery-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 50px 0;
+}
+
+.gallery-pagination a {
+  font-size: 28px;
+  color: #e6e6e6;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.gallery-pagination a:hover {
+  color: #181a1b;
+  background-color: #e6e6e6;
+}
+
+/* Stopka */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #181a1b;
+  color: #777;
+  border-top: 1px solid #2a2a2a;
+  font-family: 'MojaCzcionka';
+}
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  
+      <a href="index.html">
+    <img src="Center_Piece.png" alt="Outcast MC Logo" class="logo">
+  </a>
+  <img src="AOA.png" alt="Dodatkowe zdjęcie" class="header-image">
+  <img src="1_Diamond.png" alt="Lewe zdjęcie" class="header-left">
+</header>
+
+<section class="club-tabs">
+  <div class="tabs-container">
+    <a href="index.html" class="tab-button">Strona Główna</a>
+    <a href="historia.html" class="tab-button">Historia Klubu</a>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <h1 style="text-align:center; font-family:'MojaCzcionka'; font-size:48px; margin-bottom:40px;">Galeria</h1>
+  <div class="gallery-grid">
+    <!-- 8 Miniaturek zdjęć -->
+    <a href="#img1" class="gallery-item"><img src="foto1.jpg" alt="Galeria 1"></a>
+    <a href="#img2" class="gallery-item"><img src="foto2.jpg" alt="Galeria 2"></a>
+    <a href="#img3" class="gallery-item"><img src="foto3.jpg" alt="Galeria 3"></a>
+    <a href="#img4" class="gallery-item"><img src="foto4.jpg" alt="Galeria 4"></a>
+    <a href="#img5" class="gallery-item"><img src="foto5.jpg" alt="Galeria 5"></a>
+    <a href="#img6" class="gallery-item"><img src="foto6.jpg" alt="Galeria 6"></a>
+    <a href="#img7" class="gallery-item"><img src="foto7.jpg" alt="Galeria 7"></a>
+    <a href="#img8" class="gallery-item"><img src="foto8.jpg" alt="Galeria 8"></a>
+  </div>
+
+  <!-- Wyśrodkowana minimalistyczna strzałka do następnej strony -->
+  <div class="gallery-pagination">
+    <a href="galeria2.html">&#8250;</a>
+  </div>
+</section>
+
+<!-- Lightboxy -->
+<div id="img1" class="lightbox"><a href="#" class="close"></a><img src="foto1.jpg" alt="Galeria 1"></div>
+<div id="img2" class="lightbox"><a href="#" class="close"></a><img src="foto2.jpg" alt="Galeria 2"></div>
+<div id="img3" class="lightbox"><a href="#" class="close"></a><img src="foto3.jpg" alt="Galeria 3"></div>
+<div id="img4" class="lightbox"><a href="#" class="close"></a><img src="foto4.jpg" alt="Galeria 4"></div>
+<div id="img5" class="lightbox"><a href="#" class="close"></a><img src="foto5.jpg" alt="Galeria 5"></div>
+<div id="img6" class="lightbox"><a href="#" class="close"></a><img src="foto6.jpg" alt="Galeria 6"></div>
+<div id="img7" class="lightbox"><a href="#" class="close"></a><img src="foto7.jpg" alt="Galeria 7"></div>
+<div id="img8" class="lightbox"><a href="#" class="close"></a><img src="foto8.jpg" alt="Galeria 8"></div>
+
+<footer>
+  © Outcasts MC
+</footer>
+
+</body>
+</html>
