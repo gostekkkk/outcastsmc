@@ -3,36 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Biking & Brotherhood">
-  <meta name="keywords" content="Biking & Brotherhood"">
+  <meta name="keywords" content="Biking & Brotherhood">
   <meta name="author" content="Outcasts">
   <title>Outcasts MC</title>
-<link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
 
-<meta property="og:title" content="Outcasts MC">
-<meta property="og:description" content="Biking & Brotherhood">
-<meta property="og:image" content="https://outcastmcsworld.netlify.app/Center_Piece.png">
-<meta property="og:url" content="https://outcastmcsworld.netlify.app/">
-<meta property="og:type" content="website">
-
+  <meta property="og:title" content="Outcasts MC">
+  <meta property="og:description" content="Biking & Brotherhood">
+  <meta property="og:image" content="https://outcastmcsworld.netlify.app/Center_Piece.png">
+  <meta property="og:url" content="https://outcastmcsworld.netlify.app/">
+  <meta property="og:type" content="website">
 
   <style>
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #181a1b;
+      color: #777;
+      border-top: 1px solid #2a2a2a;
+      font-family: 'MojaCzcionka';
+    }
 
-footer {
-  text-align: center;       /* Wyśrodkowuje tekst */
-  padding: 20px 0;          /* Odstęp od góry i dołu */
-  background-color: #181a1b; /* Pasuje do reszty strony */
-  color: #777;           /* Kolor tekstu */
-  border-top: 1px solid #2a2a2a; /* Opcjonalna górna linia */
-  font-family: 'MojaCzcionka';   /* Spójna czcionka */
-}
-
-
-@font-face {
-  font-family: 'MojaCzcionka';
-  src: url('fonts/OldLondon.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+    @font-face {
+      font-family: 'MojaCzcionka';
+      src: url('fonts/OldLondon.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
     body {
       margin: 0;
@@ -42,43 +39,41 @@ footer {
       overflow-x: hidden;
     }
 
-    /* Logo  */
-   header {
-  position: relative;       /* potrzebne do absolutnego pozycjonowania zdjęcia */
-  text-align: center;       /* wyśrodkowuje logo */
-  padding: 20px 0;
-  border-bottom: 1px solid #2a2a2a;
-}
+    /* Logo */
+    header {
+      position: relative;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #2a2a2a;
+    }
 
-/* Logo w centrum */
-header img.logo {
-  width: 300px;   /* szerokość logo */
-  height: auto;   /* zachowuje proporcje */
-  filter: drop-shadow(0 0 8px #000);
-}
+    header img.logo {
+      width: 300px;
+      height: auto;
+      filter: drop-shadow(0 0 8px #000);
+    }
 
-/* Dodatkowe zdjęcie po prawej */
-header img.header-image {
-  position: absolute;       /* niezależne pozycjonowanie */
-  right: 400px;              /* odległość od prawej krawędzi nagłówka */
-  top: 50%;                 /* wyśrodkowanie w pionie */
-  transform: translateY(-50%); /* poprawne wyśrodkowanie w pionie */
-  width: 150px;             /* szerokość dodatkowego zdjęcia */
-  height: auto;
-  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5)); /* cień tylko dla obrazka */
-}
+    header img.header-image {
+      position: absolute;
+      right: 400px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 150px;
+      height: auto;
+      filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+    }
 
-header img.header-left {
-  position: absolute;
-  left: 400px;    /* odsunięcie od lewej */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 250px;
-  height: auto;
-  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
-}
+    header img.header-left {
+      position: absolute;
+      left: 400px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 250px;
+      height: auto;
+      filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+    }
 
-    /* --- NOWE ZAKŁADKI --- */
+    /* Zakładki */
     .club-tabs {
       text-align: center;
       padding: 40px 20px;
@@ -89,6 +84,7 @@ header img.header-left {
 
     .tabs-container {
       display: inline-flex;
+      justify-content: center;
       gap: 50px;
     }
 
@@ -109,13 +105,8 @@ header img.header-left {
       transform: scale(1.05);
     }
 
-
-
-
-
-
-   /* Sekcja mapy  */
-.map-section {
+    /* Sekcja mapy */
+    .map-section {
       padding: 30px 0;
       text-align: center;
       background-color: #181a1b;
@@ -124,271 +115,232 @@ header img.header-left {
     }
 
     .map-section .map-container {
-       display: flex;
-  justify-content: center; /* wyśrodkowanie całej sekcji */
-  align-items: flex-start; /* wyrównanie góra */
-  gap: 30px; /* odstęp między zdjęciem, mapą i tekstem */
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
     }
 
-/* Tekst po prawej */
-.map-text {
-  display: flex;
-  flex-direction: column;   /* linki jeden pod drugim */
-  justify-content: flex-start;
-  font-family: 'MojaCzcionka';
-  color: #e6e6e6;
-  font-size: 28px;
+    .map-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-family: 'MojaCzcionka';
+      color: #e6e6e6;
+      font-size: 28px;
+      margin-top: 10px;
+      margin-left: 50px;
+    }
 
- 
-  margin-top: 10px;  
-  margin-left: 50px
-}
+    .map-text a {
+      color: #e6e6e6;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: color 0.3s;
+      text-shadow: 2px 2px 4px #000000;
+    }
 
-.map-text a {
-  color: #e6e6e6;
-  text-decoration: none;
-  margin-bottom: 10px;
-  transition: color 0.3s;
-  text-shadow: 2px 2px 4px #000000;
-  
-  
-}
-
-.map-text a:hover {
-  color: #ffffff; /* kolor po najechaniu */
-   text-shadow: 16px 16px 32px #000000;
-}
-
+    .map-text a:hover {
+      color: #ffffff;
+      text-shadow: 16px 16px 32px #000000;
+    }
 
     .side-image {
-  
-    width: 25%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
-  margin-top:  100px;
-  
- 
+      width: 25%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      margin-top: 100px;
     }
 
     .main-map {
-     width: 60%;        /* zajmuje 50% szerokości kontenera */
-  max-width: 800px;  /* nie większa niż 600px */
-  height: auto;      /* zachowuje proporcje */
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      width: 60%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
     }
 
-
-    /* Sekcja postaci  */
-
-.characters {
- padding: 50px 20px;
+    /* Sekcja postaci */
+    .characters {
+      padding: 50px 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
       background-color: #121314;
       border-top: 1px solid #2a2a2a;
+    }
 
-}
+    .character {
+      display: inline-block;
+      text-decoration: none;
+      color: #e6e6e6;
+      text-align: center;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+      cursor: pointer;
+      position: relative;
+    }
 
-.character {
-    display: inline-block;       /* blokowy link, żeby p był pod obrazkiem */
-  text-decoration: none;       /* usuwa podkreślenie linku */
-  color: #e6e6e6;             /* kolor tekstu */
-  text-align: center;          /* wyśrodkowanie tekstu pod obrazkiem */
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  cursor: pointer;        /* kolor tekstu pod zdjęciem */
-}
+    .characters-header {
+      text-align: center;
+      font-family: 'MojaCzcionka';
+      color: #e6e6e6;
+      margin: 40px 0 20px 0;
+    }
 
-.characters-header {
-  text-align: center;        /* wyśrodkowanie w poziomie */
-  font-family: 'MojaCzcionka'; /* Twoja czcionka */
-  color: #e6e6e6;
-  margin: 40px 0 20px 0;     /* odstęp od góry i do sekcji zdjęć */
-}
+    .characters-header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
 
-.characters-header h1 {
-  font-size: 48px;
-  margin: 0;
-}
+    .characters-header h2 {
+      font-size: 24px;
+      margin: 0;
+      font-weight: normal;
+    }
 
-.characters-header h2 {
-  font-size: 24px;
-  margin: 0;
-  font-weight: normal;
-}
+    .characters img {
+      width: 380px;
+      height: 650px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
+    .character:hover img {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    }
 
-.character {
-  position: relative;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  cursor: pointer;
-}
+    .note-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(24, 26, 27, 0.9);
+      border: 1px solid #c0392b;
+      padding: 20px 40px;
+      border-radius: 10px;
+      font-family: 'MojaCzcionka';
+      color: #e6e6e6;
+      font-size: 26px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+      text-align: center;
+    }
 
-.characters img {
-     width: 380px;
-  height: 650px; /* stała wysokość */
-  object-fit: cover; /* przycina obrazek zamiast go rozciągać */
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .characters:hover .character {
+      transform: translateX(60px);
+      opacity: 0.6;
+    }
 
-.character:hover img {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
-}
+    .characters .character:hover {
+      transform: scale(1.05) translateX(-60px);
+      opacity: 1;
+    }
 
-/* Notatka pośrodku */
-.note-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(24, 26, 27, 0.9);
-  border: 1px solid #c0392b;
-  padding: 20px 40px;
-  border-radius: 10px;
-  font-family: 'MojaCzcionka';
-  color: #e6e6e6;
-  font-size: 26px;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-  text-align: center;
-}
+    .characters:hover .note-box {
+      opacity: 1;
+    }
 
-/* Efekt odsuwania pozostałych zdjęć */
-.characters:hover .character {
-  transform: translateX(60px);
-  opacity: 0.6;
-}
+    .character p {
+      margin-top: 10px;
+      font-family: 'MojaCzcionka';
+      font-size: 22px;
+      color: #e6e6e6;
+    }
 
-.characters .character:hover {
-  transform: scale(1.05) translateX(-60px);
-  opacity: 1;
-}
+    .contact-info {
+      text-align: center;
+      background-color: #181a1b;
+      color: #e6e6e6;
+      padding: 40px 20px;
+      border-top: 1px solid #2a2a2a;
+      border-bottom: 1px solid #2a2a2a;
+      font-family: 'MojaCzcionka';
+      font-size: 24px;
+    }
 
-.characters:hover .note-box {
-  opacity: 1;
-}
+    .contact-info a {
+      color: #ffffff !important;
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000000;
+      transition: text-shadow 0.3s ease;
+    }
 
-.character p {
-  margin-top: 10px;
-  font-family: 'MojaCzcionka';
-  font-size: 22px;
-  color: #e6e6e6;
-}
-
-.contact-info {
-  text-align: center;
-  background-color: #181a1b;
-  color: #e6e6e6;
-  padding: 40px 20px;
-  border-top: 1px solid #2a2a2a;
-  border-bottom: 1px solid #2a2a2a;
-  font-family: 'MojaCzcionka';
-  font-size: 24px;
-}
-
-.contact-info a {
-  color: #ffffff !important; /* wymusza biały kolor */
-  text-decoration: none;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px #000000; /* delikatny cień */
-  transition: text-shadow 0.3s ease;
-}
-
-.contact-info a:hover {
-  color: #ffffff !important; /* ZAWSZE biały, bez zmiany */
-  text-shadow: 16px 16px 32px #000000; /* mocniejszy czarny cień jak przy mapie */
-}
-
-
-
-
+    .contact-info a:hover {
+      color: #ffffff !important;
+      text-shadow: 16px 16px 32px #000000;
+    }
   </style>
 </head>
 
 <body>
   <!-- Logo -->
   <header>
-
-      <img src="Center_Piece.png" alt="Outcast MC Logo" class="logo">
-  <img src="AOA.png" alt="Dodatkowe zdjęcie" class="header-image">
-  <img src="1_Diamond.png" alt="Lewe zdjęcie" class="header-left">
+    <img src="Center_Piece.png" alt="Outcast MC Logo" class="logo">
+    <img src="AOA.png" alt="Dodatkowe zdjęcie" class="header-image">
+    <img src="1_Diamond.png" alt="Lewe zdjęcie" class="header-left">
   </header>
 
- <!-- NOWE ZAKŁADKI -->
+  <!-- Zakładka Historia (wyśrodkowana) -->
   <section class="club-tabs">
     <div class="tabs-container">
       <a href="historia.html" class="tab-button">Historia Klubu</a>
-      <a href="galeria.html" class="tab-button">Galeria</a>
     </div>
   </section>
-
-
-
 
   <!-- Sekcja z mapą GTA V -->
   <section class="map-section">
     <div class="map-container">
-    <img src="ThrashinOutcastsRecruit.png" alt="Zdjęcie po lewej" class="side-image">
-    <img src="mapastanow2.png" alt="Mapa GTA V">
-
-    <div class="map-text">
-      <a href="strona1.html">San Andreas Chapter</a><br>
-      <a href="strona2.html">Nevada Chapter</a><br>
-      <a href="strona3.html">North Dakota Chapter</a><br>
-      <a href="strona4.html">New Mexico Chapter</a><br>
-      <a href="strona5.html">Texas Chapter</a><br>
-      <a href="strona6.html">Missouri Chapter</a><br>
-      <a href="strona7.html">Michigan Chapter</a><br>
-      <a href="strona8.html">Alabama Chapter</a><br>
-      <a href="strona9.html">New York Chapter</a><br>
-      <a href="strona10.html">Georgia - Mother Chapter</a><br>
-
-
-
-
-      
+      <img src="ThrashinOutcastsRecruit.png" alt="Zdjęcie po lewej" class="side-image">
+      <img src="mapastanow2.png" alt="Mapa GTA V" class="main-map">
+      <div class="map-text">
+        <a href="strona1.html">San Andreas Chapter</a><br>
+        <a href="strona2.html">Nevada Chapter</a><br>
+        <a href="strona3.html">North Dakota Chapter</a><br>
+        <a href="strona4.html">New Mexico Chapter</a><br>
+        <a href="strona5.html">Texas Chapter</a><br>
+        <a href="strona6.html">Missouri Chapter</a><br>
+        <a href="strona7.html">Michigan Chapter</a><br>
+        <a href="strona8.html">Alabama Chapter</a><br>
+        <a href="strona9.html">New York Chapter</a><br>
+        <a href="strona10.html">Georgia - Mother Chapter</a><br>
+      </div>
     </div>
-    </div>
- 
   </section>
 
-<section class="characters-header">
-  <h1>G B N F</h1>
-  <h2>Gone but never forgotten</h2>
-</section>
-
+  <section class="characters-header">
+    <h1>G B N F</h1>
+    <h2>Gone but never forgotten</h2>
+  </section>
 
   <!-- Sekcja ze zdjęciami postaci -->
-<section class="characters">
-  <a href="ramiro.html" class="character">
-    <img src="postac11.png" alt="Postać 1">
-    <p>† Ramiro 12.04.2021</p>
+  <section class="characters">
+    <a href="ramiro.html" class="character">
+      <img src="postac11.png" alt="Postać 1">
+      <p>† Ramiro 12.04.2021</p>
+    </a>
 
-  </a>
+    <a href="nathan.html" class="character">
+      <img src="postac2.png" alt="Postać 2">
+      <p>† Nathan &amp; Salazar 03.09.2022</p>
+    </a>
 
-  <a href="nathan.html" class="character">
-    <img src="postac2.png" alt="Postać 2">
-    <p>† Nathan & Salazar 03.09.2022</p>
-      
-  </a>
+    <a href="pedro.html" class="character">
+      <img src="postac33.png" alt="Postać 3">
+      <p>† Pedro 17.02.2023</p>
+    </a>
 
-  <a href="pedro.html" class="character">
-    <img src="postac33.png" alt="Postać 3">
-    <p>† Pedro 17.02.2023</p>
-  </a>
-
-  <a href="enrique.html" class="character">
-    <img src="postac44.png" alt="Postać 4">
-    <p>† Enrique 29.11.2024</p>
-  </a>
-</section>
+    <a href="enrique.html" class="character">
+      <img src="postac44.png" alt="Postać 4">
+      <p>† Enrique 29.11.2024</p>
+    </a>
+  </section>
 
   <section class="contact-info">
     <p>Wszystko dzieje sie twarza w twarz.<br>
@@ -398,16 +350,8 @@ header img.header-left {
     <a href="mailto:info@outcastsworld.com">info@outcastsmcworld.com</a></p>
   </section>
 
-
   <footer>
     © Outcasts MC
   </footer>
-
-
-
-
-
-
-
 </body>
 </html>
